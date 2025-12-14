@@ -1,4 +1,4 @@
-DISCORD_TOKEN = "MTE5Nzk5MzI4ODkwMTM0OTQ5Ng.GOi3aj.YoMC9Lajs-gAhZzXEEkEOfXf6X6ZLA43OvBv08"
+DISCORD_TOKEN = ${{ secrets.DISCORD_TOKEN }}
 
 # IDs dos canais do Discord
 CHANNELS = {
@@ -10,3 +10,4 @@ CHANNELS = {
 
 # País (Portugal)
 JUSTWATCH_LOCALE = "pt_PT"
+
