@@ -1,0 +1,12 @@
+DISCORD_TOKEN = "MTE5Nzk5MzI4ODkwMTM0OTQ5Ng.GOi3aj.YoMC9Lajs-gAhZzXEEkEOfXf6X6ZLA43OvBv08"
+
+# IDs dos canais do Discord
+CHANNELS = {
+    "disney": 1449618126558990407,
+    "netflix": 1449618148046278707,
+    "prime": 31449618165830258719,
+    "hbo": 1449618176957747302
+}
+
+# País (Portugal)
+JUSTWATCH_LOCALE = "pt_PT"
