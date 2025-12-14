@@ -1,0 +1,29 @@
+name: Run Discord Bot
+
+on:
+  push:
+    branches:
+      - main  # ou a branch que usas
+  schedule:
+    - cron: "0 */2 * * *"  # a cada 2 horas
+
+jobs:
+  run-bot:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.11  # ou a versão do Python que usas
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run bot
+        env:
+          DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
+        run: python bot.py
